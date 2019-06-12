@@ -1,0 +1,198 @@
+/* GENERAL */
+
+:root{
+    --article-width: 700px;
+	--article-height: auto;
+	--article-margin: 10px 10px 10px 10px;
+}
+
+body
+{
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(225,225,225);
+	margin: 0px 0px 0px 0px;
+}
+
+a
+{
+	color: black;
+}
+
+a:visited
+{
+	color: rgb(100, 100, 100);
+}
+
+h1
+{
+	font-size : 2.4em;
+}
+
+h2
+{
+	font-size : 2em;
+}
+
+h3
+{
+	font-size : 1.6em;
+}
+
+h4
+{
+	font-size : 1.2em;
+}
+
+p
+{
+	font-size: 1em;
+}
+
+/* ACCUEIL */
+
+header
+{
+	background-image: url(http://accelerons-ton-business.com/wp-content/uploads/2019/03/office-1209640_1920.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
+	padding: 10px 10px 10px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-shadow: 0px 0px 2.5px black;
+}
+
+#titre 
+{
+	line-height: 70px;
+	letter-spacing: 0.05em;
+	border-bottom: 1px solid black;
+}
+
+/* CONTENT */
+
+#content
+{
+	display: flex;
+	flex-direction: row;
+}
+
+/* MAIN CONTENT */
+
+#main-content
+{
+}
+
+.box-article
+{
+	display: flex;
+	flex-direction: row;
+	width: var(--article-width);
+	height: var(--article-height);
+	margin: var(--article-margin);
+	background-color: white;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.vignette
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: calc(var(--article-width)/3);
+	height: var(--article-height);
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	transition: all 2s ease-in;
+	z-index: 2;
+}
+
+img
+{
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.box-article-texte
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: calc(var(--article-width)*2/3);
+	background-color: white;
+	z-index: 3;
+}
+
+.article-titre
+{
+	margin: var(--article-margin);
+}
+
+.article-accroche
+{
+	margin: var(--article-margin);
+}
+
+.article-date
+{
+	margin: var(--article-margin);
+}
+
+.box-article:hover > .vignette
+{
+	transform: scale(1.1);
+	transition: all 2s ease-in;
+}
+
+/* SECONDARY CONTENT*/
+
+#secondary-content
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-radius: 10px;
+	height: 100%;
+	margin: var(--article-margin);
+	background-color: white;
+}
+
+.box-article-secondary
+{
+	margin: var(--article-margin);
+}
+
+.article-titre-secondary
+{
+	margin: 0px 0px 0px 0px;
+}
+
+.vignette-secondary
+{
+	max-width: 150px;
+	float: left;
+	margin: 0px 10px 0px 0px;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

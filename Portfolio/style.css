@@ -1,0 +1,515 @@
+html
+{
+  scroll-behavior: smooth;
+  width: 100vw;
+}
+
+body
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-family: amble;
+	background-image: url(images/montagnenuit.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+	margin: 0px;
+	width: 100%;
+}
+
+h1
+{
+	font-size: 2em;
+	letter-spacing: 0.5em;
+}
+
+h2
+{
+	font-size: 1.8em;
+	letter-spacing: 0.4em;
+}
+
+h3
+{
+	font-size: 1.4em;
+	letter-spacing: 0.2em;
+}
+
+h4
+{
+	font-size: 1em;
+	margin-left: 10px;
+}
+
+p
+{
+	font-size: 1em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* Page 1 : Titre */
+
+.boxtitre
+{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 100%;
+}
+
+.titre
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: calc(auto+60em+1em);
+	color: white;
+}
+
+.boxfleche
+{
+	margin-top: auto;
+	margin-bottom: 1em;
+	align-self: center;
+	border-radius: 360px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: all 0.5s;
+}
+
+.boxfleche:hover 
+{
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: all 0.5s;
+}
+
+.bordure70
+{
+	border-bottom: 0.15em white solid;
+	width:70%;
+	margin-bottom: 1em;
+}
+
+.bordure60
+{
+	border-bottom: 0.15em white solid;
+	width:60%;
+}
+
+/* Page 2 : Fonctionnement */
+
+.boxfonctionnement
+{
+	background-color: rgba(16, 19, 20, 0.9);
+	color: #293133;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+	width: 100%;
+}
+
+.boxfonctionnement-titre
+{
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.box-etape1
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	grid-template-areas: 
+	"image titre"
+	"image texte";
+	max-width: 90%;
+	height: 250px;
+	padding-right: 10px;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.etape1-img
+{
+	grid-area: image;
+	height: 250px;
+	width: 250px;
+	background-image: url(images/reunion.jpg);
+	background-size: cover;
+	position: center;
+	text-align: center;
+	line-height: 250px;
+	font-size: 250px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 1s ease-in;
+}
+
+.box-etape1:hover > .etape1-img
+{
+	transform: scale(1.1);
+	transition: all 1s ease-in;
+}
+
+.etape1-txt
+{
+	height: 250px;
+	background-color: white;
+	z-index: 2;
+}
+
+.etape1-titre
+{
+	border-bottom: 1px black solid;
+}
+.etape1-texte
+{
+	grid-area: texte;
+	height: 100%;
+	width: 100%;
+	padding-left: 10px;
+	margin-top: 0.8em;
+	line-height: 2em;
+}
+
+.box-etape2
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 100% auto;
+	grid-template-areas: 
+	"titre image"
+	"texte image";
+	max-width: 90vw;
+	height: 250px;
+	padding-left: 10px;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.3); 
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.etape2-img
+{
+	grid-area: image;
+	height: 100%;
+	width: 250px;
+	background-image: url(images/maquette.jpg);
+	background-size: cover;
+	position: center;
+	text-align: center;
+	line-height: 250px;
+	font-size: 250px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 1s ease-in;
+}
+
+.box-etape2:hover > .etape2-img
+{
+	transform: scale(1.1);
+	transition: all 1s ease-in;
+}
+
+.etape2-txt
+{
+	height: 100%;
+	background-color: white;
+	z-index: 2;
+}
+
+.etape2-titre
+{
+	border-bottom: 1px black solid;
+}
+
+.etape2-texte
+{
+	grid-area: texte;
+	height: 100%;
+	max-width: 100%;
+	padding-right: 10px;
+	margin-top: 0.8em;
+	line-height: 2em;
+}
+
+.box-etape3
+{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 100% auto;
+	grid-template-areas: 
+	"image titre"
+	"image texte";
+	max-width: 90vw;
+	height: 250px;
+	padding-right: 10px;
+	align-items: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.etape3-img
+{
+	grid-area: image;
+	height: 100%;
+	width: 250px;
+	background-image: url(images/coding.jpg);
+	background-size: cover;
+	position: center;
+	text-align: center;
+	line-height: 250px;
+	font-size: 250px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.8);
+	transition: all 1s ease-in;
+}
+
+.box-etape3:hover > .etape3-img
+{
+	transform: scale(1.1);
+	transition: all 1s ease-in;
+}
+
+.etape3-txt
+{
+	height: 100%;
+	background-color: white;
+	z-index: 2;
+}
+
+.etape3-titre
+{
+	border-bottom: 1px solid black;
+}
+.etape3-texte
+{
+	grid-area: texte;
+	max-height: 100%;
+	max-width: 100%;
+	padding-left: 10px;
+	margin-top: 0.8em;
+	line-height: 2em;
+}
+
+.boxfleche2
+{
+	margin-top: auto;
+	margin-bottom: 1em;
+	align-self: center;
+	border-radius: 360px;
+	background-color: rgba(255, 255, 255, 0.5);
+	transition: all 0.5s;
+}
+
+.boxfleche2:hover 
+{
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: all 0.5s;
+}
+
+/* CONTACTS */
+
+#boxcontact
+{
+	height: 100vh;
+	width: 100%;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#container-contact
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 10px;
+	padding: 50px 100px 50px 100px;
+}
+
+#ensavoirplus
+{
+	text-align: center;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+
+#commentaires
+{
+	width: 100%;
+}
+
+#send
+{
+	width: 100%;
+}
+
+@media (max-width: 500px) {
+
+	body
+	{
+		background-image: url(images/montagne.jpg);
+	    background-size: cover;
+	    background-position: center;
+	    height: auto;
+		margin: 0px;
+		width: 100%;
+	}
+
+	.titre {
+		color: white;
+	}
+
+	h1 {
+		font-size: 1.4em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+	}
+
+	h4 {
+		font-size: 1.1em;
+	}
+
+	p {
+		font-size: 1em;
+	}
+
+	.bordure70 {
+		border-bottom: 0.15em white solid;
+		width:90%;
+		margin-bottom: 1em;
+	}
+
+	.bordure60 {
+		border-bottom: 0.15em white solid;
+		width:70%;
+	}
+
+	.box-etape1, .box-etape2, .box-etape3  {
+		grid-template-areas: 
+		"titre"
+		"texte";
+		grid-template-columns: 100%;
+		padding: 10px;
+		width: 90vw;
+		height: auto;
+	}
+
+	.etape1-img, .etape2-img, .etape3-img {
+		display: none;
+	}
+
+	.etape1-txt, .etape2-txt, .etape3-txt {
+		height: auto;
+	}
+
+	#titre1, #titre2, #titre3 {
+		font-size: 1em;
+	}
+
+	#texte1, #texte2, #texte3 {
+		font-size: 1em;
+	}
+
+
+
+	#boxcontact {
+		height: 100vh;
+		width: 100%;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	#container-contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: auto;
+		margin-bottom: auto;
+		width: 80%;
+		background-color: rgba(255,255,255,0.1);
+		border-radius: 10px;
+		padding: 20px;
+	}
+
+	#ensavoirplus {
+		text-align: center;
+		margin-bottom: auto;
+		margin-top: auto;
+	}
+
+	#commentaires {
+		width: 100%;
+	}
+
+	table {
+		width: 100%;
+	}
+
+	td {
+		font-size: 1em;
+		line-height: 2em;
+	}
+
+	textarea {
+		font-size: 1em;
+		line-height: 1em;
+	}
+
+	input {
+		width: 100%;
+		font-size: 1em;
+	}
+
+
+	#send
+	{
+		margin-top: 1em;
+		margin-bottom: 1em;
+		font-size: 1em;
+		width: 100%;
+	}
+
+	#merci {
+		font-size: 1em;
+	}
+
+
+
+
+}
+
+
+

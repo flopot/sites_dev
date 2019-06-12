@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<title>Imattec - Contacts</title>
+</head>
+<body>
+
+<!-- PAGE ACCUEIL -->
+
+	<div id="page-accueil">
+
+		<div id="espace-logo">
+			<img src="Images/logo.jpeg" height="75px">
+		</div>
+
+		<nav id="menu">
+				<h4><a href="index.html" class="sous-menu" id="menu-aboutus">About us</a></h4>
+				<h4><a href="products.html" class="sous-menu" id="menu-products">Products</a></h4>
+				<h4><a href="news.php" class="sous-menu" id="menu-news">News</a></h4>
+				<h4><a href="contact.html" class="sous-menu" id="menu-contact">Contact</a></h4>
+		</nav>
+
+<!-- PAGE CONTACT -->
+
+	<div id="page-contact" class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="contacts">
+					<h3>Contact us:</h3>
+					<h4><i class="fas fa-phone"></i> + 33 (0) 320 234 / 044 or 110<br>
+					<i class="fas fa-fax"></i> + 33 (0) 320 234 067<br>
+					<i class="fas fa-envelope"></i> contact@imattec.com</h4>
+				</div>
+
+				<div id="form">
+					<h3>Fill in the form and we will contact you:</h3>
+					<form action="https://formspree.io/florian.potier@hotmail.fr" method="POST" class="form-example">
+							<h4><label for="name">Name: </label>
+					    	<input type="text" name="name" id="name" placeholder="Jacques Martin" required>
+					    	<br>
+					   		<label for="email">Email: </label>
+				  			<input type="email" name="email" id="email" placeholder="Jacques.martin@gmail.com" required>
+				  			<br>
+				  			<label for="tel">Telephone number: </label>
+				  			<input type="tel" name="tel" id="tel" placeholder="06 44 44 47 19" required>
+				  			<br>
+				  			<label for="comments">Comments: </label>
+				  			<input type="textarea" name="comments" id="comments" placeholder="Comments" required>
+				  			<div id="button-holder">
+			  				<input type="submit" value="Send" id="send" class="btn btn-primary">
+			  				</div></h4>
+					</form>
+				</div>
+			</div>
+
+			<div class="col-lg-6">
+				<div id="location">
+					<h3>Find us:</h3>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.029341147913!2d3.1484869153759263!3d50.737944674489086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c32edc69eea8ff%3A0x26768951fe049df3!2sIMATTEC!5e0!3m2!1sfr!2sfr!4v1557841127983!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!--<div class=space>
+			<div id="newsletter">
+				<h3>Newsletters</h3>
+				<div id="newsletter-february-2017">
+					<h4><i class="far fa-file-alt"></i> Newsletter February 2017</h4>
+					<ul>
+						<li>Textile Structure</li>
+						<li>New Engineer</li>
+						<li>IMAT'Fire Zoom</li>
+						<li>Rendez-vous</li>
+					</ul>
+				</div>
+				<div id="newsletter-april-2015">
+					<h4><i class="far fa-file-alt"></i> Newsletter April 2015</h4>
+					<ul>
+						<li>Smart Textiles</li>
+						<li>Vectran® News</li>
+						<li>Techtextil 2015</li>
+						<li>Alain JUPPE visit</li>
+					</ul>
+				</div>
+				<div id="newsletter-february-2010">
+					<h4><i class="far fa-file-alt"></i> Newsletter February 2017</h4>
+					<ul>
+						<li>Vectran® improvement</li>
+						<li>Self twisted yarn (electrical)</li>
+					</ul>
+				</div>
+				<div id="newsletter-june-2009">
+					<h4><i class="far fa-file-alt"></i> Newsletter June 2009</h4>
+					<ul>
+						<li>Developpment with Vectran®</li>
+						<li>Techtextil RDV 2009</li>
+						<li>ICSS Luc Chatel visit</li>
+						<li>New Team member</li>
+					</ul>
+				</div>
+				<div id="newsletter-april-2008">
+					<h4><i class="far fa-file-alt"></i> Newsletter April 2008</h4>
+					<ul>
+						<li>Developpment of Vectran® fibre</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class=space>
+			<div id="events">
+				<h3>Events</h3>
+				<section id="event-1" class="event">
+					<img src="" class="img-event">
+					<h4>date : name of the event</h4>
+					<p>details</p>
+				</section>
+				<section id="event-2" class="event">
+					<img src="" class="img-event">
+					<h4>date : name of the event</h4>
+					<p>details</p>
+				</section>
+				<section id="event-3" class="event">
+					<img src="" class="img-event">
+					<h4>date : name of the event</h4>
+					<p>details</p>
+				</section>
+				<section id="event-4" class="event">
+					<img src="" class="img-event">
+					<h4>date : name of the event</h4>
+					<p>details</p>
+				</section>
+				<section id="event-5" class="event">
+					<img src="" class="img-event">
+					<h4>date : name of the event</h4>
+					<p>details</p>
+				</section>
+			</div>
+		</div>-->
+
+		
+</body>
+</html>
